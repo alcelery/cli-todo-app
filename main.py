@@ -3,7 +3,11 @@ from todo.commands import add_task, list_tasks, mark_done, remove_task
 
 def main():
     if len(sys.argv) < 2:
+<<<<<<< HEAD
+        print("Usage:\n  python main.py add 'title'\n  python main.py list\n  python main.py done ID\n  python main.py remove ID")
+=======
         print("Usage: todo <add|list|done|remove> [args]")
+>>>>>>> ab539c0c3b285444280d27c1298880ee506fe668
         return
     cmd = sys.argv[1]
     if cmd == "add":
